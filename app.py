@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # 모델 로드
-model = load_model('VGG16_model.h5')
+model = load_model('./VGG16_model.h5')
 
 @app.route('/predict', methods=['POST'])
 def predict():
